@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="mensagem">mensagem</div>
+    <div class="formContainer">
+        <div id="card">
+            <div class="formLogin">
+                <h1>Login</h1>
+                <form>
+                    <h2>Email:</h2>
+                    <input id="emailLogin" type="email" name="email" placeholder="Email@exemple.com">
+                    <h2>Senha:</h2>
+                    <input id="senhaLogin" type="password" name="password" placeholder="Senha">
+                    <p>Ainda não uma conta? <span onclick="cadastrarFlip()">inscreva-se</span></p>
+                    <button type="button" onclick="login()">
+                        Login
+                    </button>
+                </form>
+            </div>
+            <div class="formCreate">
+                <h1>Criar Conta</h1>
+                <form>
+                    <h2>Nome:</h2>
+                    <input id="cadastrarNome" type="text" name="name" placeholder="Name">
+                    <h2>Email:</h2>
+                    <input id="cadastrarEmail" type="email" name="Email" placeholder="Email@exemple.com">
+                    <h2>Senha:</h2>
+                    <input id="cadastrarSenha" type="password" name="password" placeholder="Senha">
+                    <button type="button" onclick="cadastrar()">
+                        Criar Conta
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
